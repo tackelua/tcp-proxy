@@ -1,0 +1,24 @@
+{
+  "name": "tcp-proxy",
+  "version": "1.0.0",
+  "description": "",
+  "main": "tcp-proxy.js",
+  "dependencies": {
+    "tcp-proxy.js": "^1.2.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tackelua/tcp-proxy.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tackelua/tcp-proxy/issues"
+  },
+  "homepage": "https://github.com/tackelua/tcp-proxy#readme"
+}
