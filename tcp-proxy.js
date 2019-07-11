@@ -14,7 +14,15 @@ blynkApp.createProxy({
   forwardPort: 9443,
   forwardHost: 'localhost',
 });
-console.log('Forward 5228 to 9443');
+console.log('Forward 9443 to 5228');
+
+//Paypal
+const paypalApp = new TCPProxy({ port: 443});
+paypalApp.createProxy({
+  forwardPort: 4040,
+  forwardHost: 'localhost',
+});
+console.log('Forward 4040 to 443');
 
 //mqtt
 // const mqtt = new TCPProxy({ port: 443 });
@@ -22,10 +30,3 @@ console.log('Forward 5228 to 9443');
 //   forwardPort: 1883,
 //   forwardHost: 'localhost',
 // });
-
-//mqtt bridge
-const mqtt = new TCPProxy({ port: 443 });
-mqtt.createProxy({
-  forwardPort: 1883,
-  forwardHost: 'broker.shiftr.io',
-});
